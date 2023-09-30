@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+BUILD_DIR="$1"
+
+if [ ! -f "$BUILD_DIR/webpack-stats.json" ] ; then
+    exit 1
+fi
+
+echo "Django Webpack"

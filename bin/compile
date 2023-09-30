@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export BUILD_DIR="$1"
+
+cd $BUILD_DIR
+python manage.py collectstatic --noinput
